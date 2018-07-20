@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+         <link rel="stylesheet" type="text/css" href="style.css">
+         <title>SetMyTestInternship</title>
+         <script>
+function validate()                                   
+{
+    var name = document.forms["ConForm"]["field1"];              
+    var email = document.forms["ConForm"]["field2"];   
+    var address = document.forms["ConForm"]["field3"]; 
+  
+    if (name.value == "")                                 
+    {
+        window.alert("Please enter your name.");
+        name.focus();
+        return false;
+    }
+  
+    if (address.value == "")                              
+    {
+        window.alert("Please enter your address.");
+        name.focus();
+        return false;
+    }
+      
+    if (email.value == "")                                  
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+  
+    if (email.value.indexOf("@", 0) < 0)                
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+  
+    if (email.value.indexOf(".", 0) < 0)                
+    {
+        window.alert("Please enter a valid e-mail address.");
+        email.focus();
+        return false;
+    }
+
+    return alert("Submitted Succesfully!!");
+    
+}
+</script>
+    </head>
+<body id="pd-mg">
+<div>
+    <header id="site-wrapper">
+                <nav>
+                    <a href="http://www.setmytest.com/">Home</a>
+                    <a href="http://www.setmytest.com/#signup/" id="freeTrial">Free Trial</a>
+                    <a href="http://www.setmytest.com/#samples/">Samples</a>
+                    <a href="http://www.setmytest.com/#what/">QBank</a>
+                    <a href="http://www.setmytest.com/helpsetmytest/">Help</a>
+                </nav>
+            </header>
+
+        <div id="top-img"/>
+        <a href="#arrow-link" class="arrows"></a>
+</div>
+
+<div>
+  <h1 style="text-align: center;">Whats in the Bank</h1> 
+<div>
+                <div id="arrow-link" class="flipper-container">
+                    <div class="flipper">
+                        <div class="front">
+                            <p style="font-size:2em;">Mathematics</p>
+                            <p style="font-size:1.3em;">Hover to learn more</p>
+                        </div>
+                        <div class="back">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </div>
+
+                    <div class="flipper">
+                        <div class="front">
+                            <p style="font-size:2em;">English</p>
+                            <p style="font-size:1.3em;">Hover to learn more</p>
+                        </div>
+                        <div class="back">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </div>
+                    <div class="flipper">
+                        <div class="front">
+                            <p style="font-size:2em;">Science</p>
+                            <p style="font-size:1.3em;">Hover to learn more</p>
+                        </div>
+                        <div class="back">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </div>
+                    <div class="flipper">
+                        <div class="front">
+                            <p style="font-size:2em;">Explore More</p>
+                            <p style="font-size:1.3em;">Hover to learn more</p>
+                        </div>
+                        <div class="back">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        </div>
+                    </div>
+                </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="form-style-6">
+<h1>Contact Us</h1>
+<form name="ConForm" onsubmit="return validate()" method="post">
+<input type="text" name="field1" placeholder="Your Name" onclick="IsEmpty();" />
+<input type="email" name="field2" placeholder="Email Address" />
+<textarea name="field3" placeholder="Your Address"></textarea>
+<input type="submit" value="Send" alert("Your form")/>
+</form>
+</div>
+
+</body>
+</html>
